@@ -3,6 +3,11 @@ package com.adolph.javatools.common.exception;
 import com.adolph.javatools.common.response.ResultCodeEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * @Author guoqi
+ * @Date 2020/5/22 14:31
+ * @Description 自定义异常类
+ **/
 public class CustomException extends RuntimeException{
 
     @Autowired

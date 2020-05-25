@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
+/**
+ * @Author guoqi
+ * @Date 2020/5/22 14:31
+ * @Description 异常工具类
+ **/
 @Slf4j
 public class ExceptionUtil {
     /**

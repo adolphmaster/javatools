@@ -3,14 +3,16 @@ package com.adolph.javatools.common.response;
 import lombok.Getter;
 
 /**
- * guoqi
- */
+ * @Author guoqi
+ * @Date 2020/5/22 14:31
+ * @Description 结果枚举类
+ **/
 @Getter
 public enum ResultCodeEnum {
     SUCCESS(true,5000,"成功"),
     FAIL(false,5001,"失败"),
     UNKNOWN_ERROR(false,5002,"未知错误"),
-    PARAM_ERROR(false,5003,"参数错误") ,
+    PARAM_ERROR(false,5003,"参数错误"),
     NULL_POINTER(false,5004,"空指针异常")
     ;
 

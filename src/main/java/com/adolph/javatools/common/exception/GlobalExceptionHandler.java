@@ -9,13 +9,18 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * @Author guoqi
+ * @Date 2020/5/22 14:30
+ * @Description 全局异常处理类
+ **/
 @Slf4j
 @ControllerAdvice
 public class GlobalExceptionHandler {
     /**
      * 定义map，存贮常见错误信息。该类map不可修改
      */
-    private static ImmutableMap<Class<? extends Throwable>,ResultCodeEnum> EXCEPTIONS;
+    private static ImmutableMap<Class<? extends Throwable>, ResultCodeEnum> EXCEPTIONS;
     /**
      * 构建ImmutableMap
      */
