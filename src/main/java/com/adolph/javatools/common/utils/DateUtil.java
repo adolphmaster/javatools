@@ -87,6 +87,17 @@ public class DateUtil {
     }
 
     /**
+     * 按传入的格式 返回格式化的传入日期
+     *
+     * @param pattern
+     * @return
+     */
+    public static String dayStr(Date date, String pattern) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+        return formatter.format(date.toInstant());
+    }
+
+    /**
      * 把日期后的时间归0 变成(yyyy-MM-dd 00:00:00:000)
      *
      * @param date
@@ -175,4 +186,7 @@ public class DateUtil {
         return timestampToLocalDateTime(date).toLocalDate();
     }
 
+    public static void main(String[] args) {
+        System.out.println(getCurrentDateTime().getTime()-System.currentTimeMillis());
+    }
 }
